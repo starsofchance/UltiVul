@@ -1,0 +1,121 @@
+[2025-04-25 22:00:13,493] INFO: --- Script Starting (2025-04-25 22:00:13) ---
+[2025-04-25 22:00:13,495] INFO: Model ID: Qwen/Qwen2.5-Coder-7B-Instruct
+[2025-04-25 22:00:13,497] INFO: Using dynamic batch sizes based on category
+[2025-04-25 22:00:13,498] INFO: Using TOP_P: 0.5, TOP_K: 30
+[2025-04-25 22:00:13,500] INFO: Run ID: 536b48ca31
+[2025-04-25 22:00:13,501] INFO: Auto-resume enabled: Checking for existing checkpoints
+[2025-04-25 22:00:13,502] INFO: No checkpoint found - starting fresh
+[2025-04-25 22:00:13,503] INFO: 
+--- Loading Model & Tokenizer ---
+[2025-04-25 22:00:13,591] INFO: Flash Attention 2 library found. Requesting its use.
+[2025-04-25 22:00:14,983] INFO: Tokenizer loaded successfully.
+[2025-04-25 22:00:23,479] INFO: Model loaded successfully.
+[2025-04-25 22:00:23,481] INFO: Model loading complete. Time taken: 9.98 seconds.
+[2025-04-25 22:00:23,483] INFO: Model is on device: cuda:0
+[2025-04-25 22:00:23,484] INFO: Allocated GPU Memory: 15.23 GB
+[2025-04-25 22:00:23,485] INFO: Reserved GPU Memory: 17.41 GB
+[2025-04-25 22:00:23,486] INFO: 
+--- Processing Dataset: DiverseVul_Sample ---
+[2025-04-25 22:00:23,492] INFO: Loaded 7000 entries for category under_512 (max tokens: 512)
+[2025-04-25 22:00:23,497] INFO: Loaded 2089 entries for category 512_to_1024 (max tokens: 1024)
+[2025-04-25 22:00:23,501] INFO: Loaded 639 entries for category 1024_to_2048 (max tokens: 2048)
+[2025-04-25 22:00:23,504] INFO: Loaded 183 entries for category 2048_to_4096 (max tokens: 4096)
+[2025-04-25 22:00:23,506] INFO: Loaded 45 entries for category 4096_to_6144 (max tokens: 6144)
+[2025-04-25 22:00:23,508] INFO: Loaded 25 entries for category 6144_to_8192 (max tokens: 8192)
+[2025-04-25 22:00:23,510] INFO: Loaded 8 entries for category 8192_to_11000 (max tokens: 11000)
+[2025-04-25 22:00:23,512] INFO: Loaded 8 entries for category 11000_to_20000 (max tokens: 20000)
+[2025-04-25 22:00:23,513] INFO: Determined columns - Code: func, Target: target, Index: idx
+[2025-04-25 22:00:23,514] INFO: Total entries to process across all categories: 9997
+[2025-04-25 22:00:23,515] INFO: 
+Processing category 1024_to_2048 with 639 entries (max tokens: 2048, batch size: 30)
+[2025-04-25 22:00:23,517] INFO: Total entries: 639 | Batches: 22
+[2025-04-25 22:04:01,069] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:06:33,718] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:09:14,859] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:12:35,111] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:13:09,743] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:13:10,010] INFO: 
+Processing category 11000_to_20000 with 8 entries (max tokens: 20000, batch size: 1)
+[2025-04-25 22:13:10,012] INFO: Total entries: 8 | Batches: 8
+[2025-04-25 22:13:44,585] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:13:55,573] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:13:55,843] INFO: 
+Processing category 2048_to_4096 with 183 entries (max tokens: 4096, batch size: 12)
+[2025-04-25 22:13:55,845] INFO: Total entries: 183 | Batches: 16
+[2025-04-25 22:16:21,769] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:18:43,877] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:20:54,607] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:20:54,879] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:20:55,146] INFO: 
+Processing category 4096_to_6144 with 45 entries (max tokens: 6144, batch size: 10)
+[2025-04-25 22:20:55,149] INFO: Total entries: 45 | Batches: 5
+[2025-04-25 22:23:09,001] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:23:09,276] INFO: 
+Processing category under_512 with 7000 entries (max tokens: 512, batch size: 70)
+[2025-04-25 22:23:09,279] INFO: Total entries: 7000 | Batches: 100
+[2025-04-25 22:26:56,936] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:30:07,238] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:33:17,139] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:36:16,959] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:39:21,584] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:42:30,227] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:45:38,800] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:48:47,682] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:51:55,900] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:54:53,820] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 22:57:52,913] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:01:02,297] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:04:11,284] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:07:04,683] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:10:04,783] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:13:04,194] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:16:12,935] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:19:21,049] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:22:32,534] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:25:09,834] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:25:10,152] INFO: 
+Processing category 512_to_1024 with 2089 entries (max tokens: 1024, batch size: 50)
+[2025-04-25 23:25:10,155] INFO: Total entries: 2089 | Batches: 42
+[2025-04-25 23:29:02,185] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:32:20,116] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:35:38,928] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:38:48,062] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:41:43,527] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:44:38,544] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:47:21,978] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:50:37,489] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:51:14,654] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:51:14,933] INFO: 
+Processing category 6144_to_8192 with 25 entries (max tokens: 8192, batch size: 4)
+[2025-04-25 23:51:14,935] INFO: Total entries: 25 | Batches: 7
+[2025-04-25 23:52:15,363] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:52:16,232] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:52:16,501] INFO: 
+Processing category 8192_to_11000 with 8 entries (max tokens: 11000, batch size: 4)
+[2025-04-25 23:52:16,503] INFO: Total entries: 8 | Batches: 2
+[2025-04-25 23:52:39,378] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:52:39,653] INFO: Checkpoint saved to results/checkpoints/536b48ca31_checkpoint.json
+[2025-04-25 23:52:39,654] INFO: 
+--- DiverseVul_Sample Processing Complete ---
+[2025-04-25 23:52:39,656] INFO: Total time: 6736.14 seconds (1:52:16)
+[2025-04-25 23:52:39,657] INFO: Average time per entry: 0.674 seconds
+[2025-04-25 23:52:39,658] INFO: Category statistics:
+[2025-04-25 23:52:39,659] INFO:   - 1024_to_2048: 639 entries (max tokens: 2048)
+[2025-04-25 23:52:39,661] INFO:   - 11000_to_20000: 8 entries (max tokens: 20000)
+[2025-04-25 23:52:39,662] INFO:   - 2048_to_4096: 183 entries (max tokens: 4096)
+[2025-04-25 23:52:39,663] INFO:   - 4096_to_6144: 45 entries (max tokens: 6144)
+[2025-04-25 23:52:39,664] INFO:   - under_512: 7000 entries (max tokens: 512)
+[2025-04-25 23:52:39,666] INFO:   - 512_to_1024: 2089 entries (max tokens: 1024)
+[2025-04-25 23:52:39,667] INFO:   - 6144_to_8192: 25 entries (max tokens: 8192)
+[2025-04-25 23:52:39,668] INFO:   - 8192_to_11000: 8 entries (max tokens: 11000)
+[2025-04-25 23:52:39,669] INFO: Results saved to: results/536b48ca31_DiverseVul_Sample_results.jsonl
+[2025-04-25 23:52:39,672] INFO: 
+--- Processing Summary ---
+[2025-04-25 23:52:39,673] INFO: Processed 1 datasets in this run:
+[2025-04-25 23:52:39,674] INFO:   - 536b48ca31_DiverseVul_Sample_results.jsonl
+[2025-04-25 23:52:39,676] INFO: 
+Total completed datasets across all runs: 1/1
+[2025-04-25 23:52:39,677] INFO: Completed: DiverseVul_Sample
+[2025-04-25 23:52:39,678] INFO: All datasets have been fully processed!
+[2025-04-25 23:52:39,680] INFO: 
+--- Script Finished (2025-04-25 23:52:39) ---
